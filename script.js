@@ -18,7 +18,7 @@ function getWeather(cityName) {
     //   console.log(data);
       cityName.textContent = data.name;
       temp.textContent = `Temperature: ${data.main.temp}°C`;
-      humidity.textContent = `Humidity: ${data.main.temp}%`;
+      humidity.textContent = `Humidity: ${data.main.humidity}%`;
       wind.textContent = `Wind Speed: ${data.wind.speed} m/s`;
     })
     .catch(error =>{
