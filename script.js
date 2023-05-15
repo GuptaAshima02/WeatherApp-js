@@ -1,4 +1,5 @@
 // `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+let defaultCity="jammu";
 const input = document.getElementById("input");
 const submitBtn = document.getElementById("submit");
 
@@ -25,6 +26,9 @@ function getWeather(namee) {
         console.error(error);
     })
 }
+
+getWeather(defaultCity);
+
 submitBtn.addEventListener('click', () => {
     const city = input.value.trim();
     if (city) {
