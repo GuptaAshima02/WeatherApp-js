@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
   }
-  
-  body{
-    background-color: rgb(62, 130, 175);
+  .grad{
+    background: rgb(62, 130, 175);
   }
-  
   .container {
     height: 70%;
     width: 40%;
@@ -22,15 +20,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
   .header {
     margin-bottom: 30px;
   }
-  
   .header h1{
     text-shadow: 3px 3px 0px #848484, 4px 4px 0px #000000;
   }
-  
   .input{
     display: block;
     width: 100%;
@@ -41,7 +36,6 @@
     border-radius: 15px;
     font-size: 16px;
   }
-  
   button {
     padding: 10px;
     border: none;
@@ -52,38 +46,30 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
   button:hover{
     background-color: rgba(128, 128, 128, 0.386);
   }
-  
   .weather-info{
     font-size: 20px;
   }
   .weather-info h2{
     text-align: center;
   }
-  
-  /* Media Queries */
-  
-  /* Small screens (mobile devices) */
+  .weather-info h3{
+    color: rgb(201, 11, 11);
+  }
   @media only screen and (max-width: 600px) {
     .container {
       height: 80%;
       width: 80%;
     }
-  
     .header h1{
       font-size: 24px;
     }
-  
     .input{
       font-size: 14px;
     }
-  
     button {
       font-size: 14px;
     }
   }
-  
-  
